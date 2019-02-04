@@ -1,0 +1,310 @@
+* {
+ margin: 0;
+ padding: 0;
+}
+
+@media (min-width: 320px) and (orientation:portrait) {
+
+ header,
+ .header,
+ .header-bcg,
+ .header-logo {
+  height: 40vh;
+
+ }
+
+ header {
+  position: relative;
+  font-family: 'Dancing Script', cursive;
+ }
+
+ .header {
+  position: absolute;
+  width: 100vw;
+ }
+
+ .header-bcg {
+  background-image: url(/img/bcg_color_mobile.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+  opacity: .7;
+ }
+
+ .header-logo {
+  position: absolute;
+  width: 100vw;
+  z-index: 1;
+  left: 0;
+  bottom: 0;
+  background-image: url(/img/logo_header.png);
+  background-size: 50vw 50vw;
+  background-repeat: no-repeat;
+
+ }
+
+ h1,
+ h2 {
+  position: absolute;
+  background-color: white;
+ }
+
+ h1 {
+  right: 0;
+  bottom: 6vh;
+  width: 100vw;
+  z-index: 1;
+  text-align: center;
+  font-weight: 500;
+  font-size: 6vh;
+ }
+
+ h2 {
+  right: 0;
+  bottom: 3vh;
+  width: 100%;
+  z-index: 1;
+  text-align: center;
+  font-weight: 500;
+  font-size: 3vh;
+ }
+}
+
+@media (min-width: 480px) and (orientation: landscape) {
+
+ header,
+ .header,
+ .header-bcg,
+ .header-logo {
+  height: 40vh;
+
+ }
+
+ header {
+  position: relative;
+  font-family: 'Dancing Script', cursive;
+ }
+
+ .header-bcg {
+  background-image: url(/img/bcg_color_mobile.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+  opacity: .7;
+ }
+
+ .header-logo {
+  position: absolute;
+  z-index: 1;
+  left: 20vw;
+  bottom: 0;
+  width: 50%;
+  background-image: url(/img/logo_header.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  overflow: hidden;
+
+ }
+
+ h1,
+ h2 {
+  position: absolute;
+  z-index: 1;
+  font-weight: 500;
+ }
+
+ h1 {
+  right: 20%;
+  bottom: 40%;
+  font-size: 8vh;
+ }
+
+ h2 {
+  right: 20%;
+  bottom: 30%;
+  font-size: 5vh;
+ }
+}
+
+@media (min-width: 480px) and (orientation:portrait) {
+
+ header,
+ .header,
+ .header-bcg,
+ .header-logo {
+  height: 40vh;
+
+ }
+
+ header {
+  position: relative;
+  font-family: 'Dancing Script', cursive;
+ }
+
+ .header {
+  position: absolute;
+  width: 100vw;
+ }
+
+ .header-bcg {
+  background-image: url(/img/bcg_color_mobile.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: .7;
+ }
+
+ .header-logo {
+  position: absolute;
+  width: 100vw;
+  z-index: 1;
+  left: 0;
+  bottom: 0;
+  background-image: url(/img/logo_header.png);
+  background-size: 35vw 35vw;
+  background-repeat: no-repeat;
+  background-position: center 0px;
+
+
+ }
+
+ h1,
+ h2 {
+  position: absolute;
+  width: 100vw;
+  background-color: white;
+  z-index: 1;
+  text-align: center;
+  font-weight: 500;
+ }
+
+ h1 {
+  right: 0;
+  bottom: 6vh;
+  font-size: 5vh;
+ }
+
+ h2 {
+  right: 0;
+  bottom: 3vh;
+  font-size: 3vh;
+ }
+}
+
+@media (min-width: 1024px) and (orientation: landscape) {
+
+ header,
+ .header,
+ .header-bcg,
+ .header-logo {
+  height: 40vh;
+
+ }
+
+ header {
+  position: relative;
+  font-family: 'Dancing Script', cursive;
+ }
+
+ .header-bcg {
+  background-image: url(/img/bcg_color_mobile.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center -3vh;
+  opacity: .7;
+ }
+
+ .header-logo {
+  position: absolute;
+  z-index: 1;
+  left: 20vw;
+  bottom: 0;
+  width: 50%;
+  background-image: url(/img/logo_header.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+
+
+ }
+
+ h1,
+ h2 {
+  position: absolute;
+  z-index: 1;
+  font-weight: 500;
+ }
+
+ h1 {
+  right: 10%;
+  bottom: 40%;
+  font-size: 8vh;
+ }
+
+ h2 {
+  right: 10%;
+  bottom: 30%;
+  font-size: 5vh;
+ }
+}
+
+@media (min-width: 1300px) and (orientation: landscape) {
+
+ body {
+  margin: 0 auto;
+  width: 70vw;
+
+ }
+
+ header,
+ .header,
+ .header-bcg,
+ .header-logo {
+  height: 40vh;
+
+ }
+
+ header {
+  position: relative;
+  font-family: 'Dancing Script', cursive;
+ }
+
+ .header-bcg {
+  background-image: url(/img/bcg_color_tablet.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center 0vh;
+  opacity: .7;
+ }
+
+ .header-logo {
+  position: absolute;
+  z-index: 1;
+  left: 10vw;
+  bottom: 0;
+  width: 50%;
+  background-image: url(/img/logo_header.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+
+
+ }
+
+ h1,
+ h2 {
+  position: absolute;
+  z-index: 1;
+  font-weight: 500;
+ }
+
+ h1 {
+  right: 20%;
+  bottom: 5vh;
+  font-size: 8vh;
+ }
+
+ h2 {
+  right: 20%;
+  bottom: 0;
+  font-size: 5vh;
+ }
+}
