@@ -6,7 +6,10 @@
 </head>
 
 <body>
- {{ content }}
+ {% include header.html %}
+ {% include nav.html %}
+ {{ page.content }}
+ <script src="/js/script.js"></script>
 </body>
 
 </html>
