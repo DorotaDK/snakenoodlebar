@@ -1,0 +1,111 @@
+@import "main.css";
+
+@media (min-width: 320px) and (orientation:portrait) {
+ h1.title {
+  box-sizing: border-box;
+  position: static;
+  margin: 15px 0;
+  padding: 5px;
+  background-color: var(--title-green);
+  font-family: var(--font-cursive);
+  font-size: 4vh;
+  color: white;
+
+ }
+
+ .animals {
+  display: flex;
+  flex-direction: column;
+ }
+
+ .card {
+  position: relative;
+  margin-bottom: 3vh;
+  height: 28vh;
+  background-color: rgb(200, 217, 146);
+  overflow: hidden;
+ }
+
+ /* .animal-img {
+  position: absolute;
+  top: 4vh;
+  left: 6vh;
+  border: 2px solid var(--dark);
+  border-radius: 50%;
+  height: 22vh;
+  width: 22vh;
+ } */
+
+ .animal-img>img {
+  position: absolute;
+  top: 4vh;
+  left: 6vh;
+  box-shadow: 0 0 4px 2px var(--dark);
+  height: 20vh;
+  z-index: 2;
+  border-radius: 50%;
+ }
+
+ .card>div:nth-of-type(2)>p {
+  font-size: 2vh;
+  font-family: 'Dosis', sans-serif;
+ }
+
+ div.card>p:nth-child(2) {
+  position: absolute;
+  top: 50%;
+  left: 55%;
+  transform: translateY(-50%);
+  font-size: 7vh;
+  z-index: 2;
+  font-family: var(--font-cursive);
+  color: var(--dark);
+ }
+
+ .card>div:nth-of-type(3) {
+  position: absolute;
+  right: -100%;
+  width: 100%;
+  height: 28vh;
+  z-index: 1;
+  background-color: rgb(237, 244, 201);
+  transition: .3s;
+ }
+
+ .card>div:nth-of-type(2) {
+  position: absolute;
+  left: 50%;
+  top: -50%;
+  z-index: 2;
+  transform: translateY(-50%);
+
+ }
+
+ .card>div:nth-of-type(3).bcg-flip {
+  right: 0;
+ }
+
+ .description-flip {
+  top: 50%;
+ }
+
+ .name-flip {
+  top: 100%;
+ }
+
+}
+
+@media (min-width: 480px) and (orientation: landscape) {
+ h1.title {
+  position: static;
+  margin: 15px 0;
+  padding: 5px;
+  text-align: center;
+  background-color: var(--title-green);
+  font-family: var(--font-cursive);
+  font-weight: 500;
+  font-size: 5vh;
+  color: white;
+
+ }
+}

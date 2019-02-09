@@ -1,21 +1,29 @@
 * {
  margin: 0;
  padding: 0;
+ --background-white: rgb(244, 244, 242);
+ --title-green: rgb(152, 191, 93);
+ --dark: rgb(37, 44, 64);
+ --font-cursive: 'Dancing Script', cursive;
 }
 
 @media (min-width: 320px) and (orientation:portrait) {
 
+ body {
+  background-color: var(--background-white);
+ }
+
  header,
  .header,
- .header-bcg,
- .header-logo {
+ .header-bcg {
   height: 40vh;
 
  }
 
  header {
   position: relative;
-  font-family: 'Dancing Script', cursive;
+  background-color: var(--background-white);
+  font-family: var(--font-cursive);
  }
 
  .header {
@@ -33,25 +41,25 @@
 
  .header-logo {
   position: absolute;
-  width: 100vw;
+  width: 40vw;
+  height: 40vw;
   z-index: 1;
-  left: 0;
-  bottom: 0;
+  left: 4vh;
+  top: 2vh;
   background-image: url(/img/logo_header.png);
-  background-size: 50vw 50vw;
+  background-size: 40vw 40vw;
   background-repeat: no-repeat;
 
  }
 
- h1,
- h2 {
-  position: absolute;
+ .main-title {
+  position: static;
   background-color: white;
+  opacity: .8;
+  transform: translateY(-15vh);
  }
 
  h1 {
-  right: 0;
-  bottom: 6vh;
   width: 100vw;
   z-index: 1;
   text-align: center;
@@ -60,8 +68,6 @@
  }
 
  h2 {
-  right: 0;
-  bottom: 3vh;
   width: 100%;
   z-index: 1;
   text-align: center;
@@ -71,6 +77,9 @@
 }
 
 @media (min-width: 480px) and (orientation: landscape) {
+ body {
+  background-color: var(--background-white);
+ }
 
  header,
  .header,
@@ -82,7 +91,7 @@
 
  header {
   position: relative;
-  font-family: 'Dancing Script', cursive;
+  font-family: var(--font-cursive);
  }
 
  .header-bcg {
@@ -106,8 +115,7 @@
 
  }
 
- h1,
- h2 {
+ .main-title {
   position: absolute;
   z-index: 1;
   font-weight: 500;
@@ -138,7 +146,7 @@
 
  header {
   position: relative;
-  font-family: 'Dancing Script', cursive;
+  font-family: var(--font-cursive);
  }
 
  .header {
@@ -203,7 +211,7 @@
 
  header {
   position: relative;
-  font-family: 'Dancing Script', cursive;
+  font-family: var(--font-cursive);
  }
 
  .header-bcg {
@@ -265,7 +273,7 @@
 
  header {
   position: relative;
-  font-family: 'Dancing Script', cursive;
+  font-family: var(--font-cursive);
  }
 
  .header-bcg {
