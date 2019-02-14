@@ -4,7 +4,7 @@
  h1.title {
   box-sizing: border-box;
   position: static;
-  margin: 15px 0;
+  margin: 5vh 0;
   padding: 5px;
   background-color: var(--title-green);
   font-family: var(--font-cursive);
@@ -21,9 +21,25 @@
  .card {
   position: relative;
   margin-bottom: 3vh;
-  height: 28vh;
+  height: 26vh;
   background-color: rgb(200, 217, 146);
   overflow: hidden;
+ }
+
+ .card:nth-child(odd) {
+  transform: translateX(-100%);
+ }
+
+ .card:nth-child(even) {
+  transform: translateX(100%);
+ }
+
+ .card:nth-child(1) {
+  transform: translateX(0);
+ }
+
+ .card.scroll {
+  transform: translateX(0);
  }
 
  /* .animal-img {
@@ -38,7 +54,7 @@
 
  .animal-img>img {
   position: absolute;
-  top: 4vh;
+  top: 3vh;
   left: 6vh;
   box-shadow: 0 0 4px 2px var(--dark);
   height: 20vh;
@@ -60,6 +76,7 @@
   z-index: 2;
   font-family: var(--font-cursive);
   color: var(--dark);
+  transition: .3s;
  }
 
  .card>div:nth-of-type(3) {
@@ -78,6 +95,7 @@
   top: -50%;
   z-index: 2;
   transform: translateY(-50%);
+  transition: .3s;
 
  }
 
@@ -85,12 +103,14 @@
   right: 0;
  }
 
- .description-flip {
+ .card>div:nth-of-type(2).description-flip {
   top: 50%;
+  left: 50%;
  }
 
- .name-flip {
-  top: 100%;
+ div.card>p:nth-child(2).name-flip {
+  top: 120%;
+  left: 55%;
  }
 
 }
