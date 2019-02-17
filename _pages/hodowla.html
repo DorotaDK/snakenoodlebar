@@ -6,110 +6,22 @@ permalink: "/hodowla/"
 
 <h1 class="title">Nasze Zwierzaki</h1>
 <section class="animals">
+ {% for snake in site.data.snakes %}
  <div class="card">
-  <div class="animal-img"><img src="/img/animals/sirsza.png" alt="snake1"></div>
-  <p>Sirsza</p>
+  <div class="animal-img"><img src="{{ snake.image }}" alt="snake1"></div>
+  <p>{{ snake.name }}</p>
   <div>
-   <p>Gatunek: Pyton królewski</p>
-   <p>(łac. <span>Python regius</span>)</p>
-   <p>Odmiana barwna: Pinstripe, Enchi, Lesser</p>
-   <p>Płeć: samica</p>
-   <p>Data urodzenia: </p>
+   <p>Gatunek: {{ snake.species }}</p>
+   <p>(łac. <span>{{ snake.lat }}</span>)</p>
+   <p>Odmiana barwna: {{ snake.morphs }}</p>
+   <p>Płeć: {{ snake.sex }}</p>
+   <p>Data urodzenia: {{ snake.birth }}</p>
   </div>
   <div>
   </div>
  </div>
- <div class="card">
-  <div class="animal-img"><img src="/img/animals/siergiej.png" alt="snake2"></div>
-  <p>Siergiej</p>
-  <div>
-   <p>Gatunek: Pyton królewski</p>
-   <p>(łac. <span>Python regius</span>)</p>
-   <p>Odmiana barwna: Pastel, Leopard</p>
-   <p>Płeć: samiec</p>
-   <p>Data urodzenia: </p>
-  </div>
-  <div>
-  </div>
- </div>
- <div class="card">
-  <div class="animal-img"><img src="/img/animals/senua.png" alt="snake3"></div>
-  <p>Senua</p>
-  <div>
-   <p>Gatunek: Pyton królewski</p>
-   <p>(łac. <span>Python regius</span>)</p>
-   <p>Odmiana barwna: Champagne, Enchi, poss YB</p>
-   <p>Płeć: samica</p>
-   <p>Data urodzenia: </p>
-  </div>
-  <div>
-  </div>
- </div>
- <div class="card">
-  <div class="animal-img"><img src="/img/animals/eris.png" alt="snake4"></div>
-  <p>Eris</p>
-  <div>
-   <p>Gatunek: Pyton królewski</p>
-   <p>(łac. <span>Python regius</span>)</p>
-   <p>Odmiana barwna: Firefly (Pastel, Fire)</p>
-   <p>Płeć: samica</p>
-   <p>Data urodzenia: </p>
-  </div>
-  <div>
-  </div>
- </div>
- <div class="card">
-  <div class="animal-img"><img src="/img/animals/klarens.png" alt="gecko"></div>
-  <p>Klarens</p>
-  <div>
-   <p>Gatunek: Gekon orzęsiony</p>
-   <p>(łac. <span>Correlophus ciliatus</span>)</p>
-   <p>Odmiana barwna: Full Pinstripe</p>
-   <p>Płeć: samiec</p>
-   <p>Data urodzenia: </p>
-  </div>
-  <div>
-  </div>
- </div>
- <div class="card">
-  <div class="animal-img"><img src="/img/animals/maiev.png" alt="snake5"></div>
-  <p>Maiev</p>
-  <div>
-   <p>Gatunek: Boa tęczowy brazylijski</p>
-   <p> (łac. <span>Epicrates cenchria cenchria</span>)</p>
-   <p>Odmiana barwna: Anery</p>
-   <p>Płeć: samica</p>
-   <p>Data urodzenia: </p>
-  </div>
-  <div>
-  </div>
- </div>
- <div class="card">
-  <div class="animal-img"><img src="/img/animals/alduin.png" alt="snake5"></div>
-  <p>Alduin</p>
-  <div>
-   <p>Gatunek: Boa tęczowy brazylijski</p>
-   <p> (łac. <span>Epicrates cenchria cenchria</span>)</p>
-   <p>Odmiana barwna: Anery</p>
-   <p>Płeć: samiec</p>
-   <p>Data urodzenia: </p>
-  </div>
-  <div>
-  </div>
- </div>
- <div class="card">
-  <div class="animal-img"><img src="/img/animals/scarlett.png" alt="snake6"></div>
-  <p>Scarlett</p>
-  <div>
-   <p>Gatunek: Lampropeltis kalifornijski</p>
-   <p>(łac. <span>Lampropeltis californiae</span>)</p>
-   <p>Odmiana barwna: Albino</p>
-   <p>Płeć: samica</p>
-   <p>Data urodzenia: </p>
-  </div>
-  <div>
-  </div>
- </div>
+ {% endfor %}
+
 </section>
 <footer>
 

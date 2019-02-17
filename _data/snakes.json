@@ -1,0 +1,73 @@
+[{
+  "name": "Sirsza",
+  "species": "Pyton królewski",
+  "lat": "Python regius",
+  "morphs": "Pinstripe, Enchi, Lesser",
+  "sex": "samica",
+  "birth": "",
+  "image": "/img/animals/sirsza.png"
+ },
+ {
+  "name": "Siergiej",
+  "species": "Pyton królewski",
+  "lat": "Python regius",
+  "morphs": "Pastel, Leopard",
+  "sex": "samiec",
+  "birth": "",
+  "image": "/img/animals/siergiej.png"
+ },
+ {
+  "name": "Senua",
+  "species": "Pyton królewski",
+  "lat": "Python regius",
+  "morphs": "Champagne, Enchi, poss YB",
+  "sex": "samica",
+  "birth": "",
+  "image": "/img/animals/senua.png"
+ },
+ {
+  "name": "Eris",
+  "species": "Pyton królewski",
+  "lat": "Python regius",
+  "morphs": "Firefly (Fire, Pastel)",
+  "sex": "samica",
+  "birth": "",
+  "image": "/img/animals/eris.png"
+ },
+ {
+  "name": "Klarens",
+  "species": "Gekon orzęsiony",
+  "lat": "Correlophus ciliatus",
+  "morphs": "Full Pinstripe",
+  "sex": "samiec",
+  "birth": "",
+  "image": "/img/animals/klarens.png"
+ },
+ {
+  "name": "Maiev",
+  "species": "Boa tęczowy brazylijski",
+  "lat": "Epicrates cenchria cenchria",
+  "morphs": "Anery 66% Caramel",
+  "sex": "samica",
+  "birth": "",
+  "image": "/img/animals/maiev.png"
+ },
+ {
+  "name": "Alduin",
+  "species": "Boa tęczowy brazylijski",
+  "lat": "Epicrates cenchria cenchria",
+  "morphs": "Anery 66% Caramel",
+  "sex": "samiec",
+  "birth": "",
+  "image": "/img/animals/alduin.png"
+ },
+ {
+  "name": "Scarlett",
+  "species": "Lancetogłów kalifornijski",
+  "lat": "Lampropeltis californiae",
+  "morphs": "Albino",
+  "sex": "samica",
+  "birth": "",
+  "image": "/img/animals/scarlett.png"
+ }
+]
